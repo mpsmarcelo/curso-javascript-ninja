@@ -44,7 +44,7 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function multiplicacao(a,b,c){
-	if(!a || !b || !c){
+	if(a === undefinend || b === undefinend  || c === undefinend ){
 		return'Preencha todos os valores corretamente!';
 	}
 	return (a * b * c) + 2;

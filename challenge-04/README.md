@@ -64,12 +64,12 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `quantidadePessoas` - Number - zero por padrão
 */
  var carro = {
-			 marca : String,
-			 modelo : String,
-			 placa : String,
-			 ano   : Number,
-			 cor : String,
-			 quantasPortas : Number,
+			 marca : 'Volks',
+			 modelo : 'Sport-line',
+			 placa : 'MM5-2311',
+			 ano   : 2013,
+			 cor : 'Branca',
+			 quantasPortas : 5,
 			 assentos : 5,
 			 quantidadePessoas : 0
 			 }
@@ -152,7 +152,7 @@ retornar algum valor.
 
 Qual a cor atual do carro?
 */
-obterCor(); //""
+obterCor(); //"Branca"
 
 // Mude a cor do carro para vermelho.
 mudarCor('Vermelho'); //Vermelho

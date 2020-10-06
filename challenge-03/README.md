@@ -187,27 +187,12 @@ correta, de acordo com os dados inseridos no objeto.
 
 
 pessoa.getapresentacao = function(){
+     var sexo =  pessoa.sexo = 'Masculino' ? 'o' : 'a';
+	 var idade = pessoa.idade === 1 ? 'ano' : 'anos';
+	 var metros = pessoa.caminhouQuantosMetros >1 ? 'metros' :  'metro';
 
-	 var apresentacao = '';
-		if(pessoa.sexo === 'Masculino'){
-			apresentacao += 'Oi eu sou o ' + pessoa.getNomeCompleto();
-		}else{
-			apresentacao += 'Oi eu sou a ' + pessoa.getNomeCompleto();
- 		}
+	 return 'Oi eu sou ' + sexo + ' '+  pessoa.getNomeCompleto() + ', tenho '+ pessoa.idade + ' ' + idade + ' só hoje, eu já caminhei  '+ pessoa.caminhouQuantosMetros +'' + metros '!';
 
-     	if(pessoa.idade > 1){
- 			apresentacao += ', tenho '+ pessoa.idade +' anos,';
- 		}else{
- 			apresentacao += ', tenho '+ pessoa.idade +' ano,';
- 		}
-
- 		if(pessoa.caminhouQuantosMetros > 1){
- 			apresentacao += ' só hoje, eu já caminhei  '+ pessoa.caminhouQuantosMetros +' metros!';
- 		}else{
- 			apresentacao += ' só hoje, eu já caminhei '+ pessoa.caminhouQuantosMetros +' metro,';
- 		}
-
- return apresentacao;
  }
 
 

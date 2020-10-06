@@ -30,11 +30,11 @@ função receberá dois parâmetros e retornará a operação referente à sua
 propriedade, usando os valores passados por parâmetro.
 */
 var operation = { 
-                   '+'  :  function(num1 , num2){ return num1 + num2;},
-                   '-'  :  function(num1 , num2){ return num1 - num2;},
-                   '*'  :  function(num1 , num2){ return num1 * num2;},
-                   '/'  :  function(num1 , num2){ return num1 / num2;},
-                   '%'  :  function(num1 , num2){ return num1 % num2;},          
+                   '+'  :  function(num1 , num2){ return (!!num1 && !!num2) ?  num1 + num2 :  false;},
+                   '-'  :  function(num1 , num2){ return (!!num1 && !!num2) ?  num1 - num2 :  false;},
+                   '*'  :  function(num1 , num2){ return (!!num1 && !!num2) ?  num1 * num2 :  false;},
+                   '/'  :  function(num1 , num2){ return (!!num1 && !!num2) ?  num1 / num2 :  false;},
+                   '%'  :  function(num1 , num2){ return (!!num1 && !!num2) ?  num1 % num2 :  false;},          
                 }
 
 
@@ -50,25 +50,27 @@ Caso contrário, "false".
 - O desafio é fazer o retorno sem usar "if" ou "switch".
 */
 function isOperatorValid(operador){
+
+
     switch(operador){
         case '+' :
-        return true;
+        return operation[operador];
         break;
     
         case '-' :
-        return true;
+        return operation[operador];
         break;
 
         case '*' :
-        return true;
+        return operation[operador];
         break;
 
         case '/' :
-        return true;
+        return operation[operador];
         break;
 
         case '%' :
-        return true;
+        return operation[operador];
         break;
         
         default : 
@@ -90,8 +92,12 @@ parâmetros;
 operador passado para a função "calculator", e passando para esse método
 os dois parâmetros da função de retorno de "calculator".
 */
-var calculator = isOperatorValid;
+function calculator(operador){
 
+var calculo = isOperatorValid(operador);
+return  calculo(5,5);
+
+}
 /*
 Crie uma função chamada "showOperationMessage" que recebe três parâmetros:
 - o operador, o primeiro número e o segundo número. O retorno da função

@@ -150,4 +150,3 @@ divisão e resto. Crie variáveis com os nomes "subtraction",
 Repita o PASSO 2 novamente, mas passando um operador inválido, para ver se
 a mensagem de erro será mostrada no console.
 */
-nao fiz

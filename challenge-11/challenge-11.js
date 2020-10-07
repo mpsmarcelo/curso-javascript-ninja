@@ -18,7 +18,6 @@ do{
 }while(once)
 
 
-})();
 
 /*
 Crie um objeto chamado `person`, que receba as seguintes propriedades:
@@ -97,6 +96,8 @@ criado acima, só precisa ser reiniciado) números de 0 a 20, inclusive
 esses. Se o número for ímpar, pular para o próximo número.
 Mostrar no console os números do array.
 */
+var numbers= [];
+var cont = 0;
 while(cont++){
 
     if(cont > 20){
@@ -111,3 +112,4 @@ while(cont++){
 }
 console.log( 'Pares de 0 a 20:', numbers ); // Pares de 0 a 20: (10) [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
+})();

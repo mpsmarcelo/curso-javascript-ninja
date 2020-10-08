@@ -42,7 +42,7 @@ esse objeto tem.
 Após o loop, mostre a frase:
 'The person has [COUNTER] properties'
 */
-for (prop in person){
+for (var prop in person){
     console.log('The '+  prop + ' of person is '+ person[prop]);
 }
 

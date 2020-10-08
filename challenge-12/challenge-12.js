@@ -11,7 +11,12 @@ Preencha cada propriedade com os seus dados pessoais, respeitando o tipo
 de valor para cada propriedade.
 */
 // ?
-console.log( 'Propriedades de "person":' );
+(function(){
+
+var person = { name : 'Marcelo' ,  lastname : 'Pereira', age : '37'};
+console.log( 'Propriedades de person: ' , Object.values(person));
+
+})()
 
 /*
 Mostre no console, em um array, todas as propriedades do objeto acima.
@@ -22,7 +27,7 @@ Não use nenhuma estrutura de repetição, nem crie o array manualmente.
 /*
 Crie um array vazio chamado `books`.
 */
-// ?
+var books = [];
 
 /*
 Adicione nesse array 3 objetos, que serão 3 livros. Cada livro deve ter a
@@ -30,7 +35,13 @@ seguintes propriedades:
 `name`: String
 `pages`: Number
 */
-// ?
+var books= [];
+
+books.push( {name : 'Lirvo de eli', pages : '200'});
+books.push( {name : 'Biblia sagrada' , pagges : '500'});
+books.push( {name : 'Java efetivo', pages : '300'});
+
+
 console.log( '\nLista de livros:' );
 
 /*

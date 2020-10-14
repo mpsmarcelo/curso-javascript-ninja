@@ -2,17 +2,23 @@
 Crie uma variável qualquer, que receba um array com alguns valores aleatórios
 - ao menos 5 - (fica por sua conta os valores do array).
 */
-var array = [1,2,3,5];
+
+var arrayArgs = [1,'Marcelo', '1500,00', 'Golf'];
+
 
 /*
 Crie uma função que receba um array como parâmetro, e retorne esse array.
 */
-function getArray(param){ return param ;};
+function getArray(arrayArgs){
+    return arrayArgs;
+}
+
 
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-getArray(array)[1] // "1"
+getArray(arrayArgs)[1]
+
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
@@ -22,16 +28,21 @@ segundo parâmetro.
 */
 function getIndiceArray(param, indice){ return param[indice];} // [1, 2, 3, 5]
 
+
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-var myArray = [10,'Marcelo',[1,2,3,5],{ marca : 'volks' , modelo : 'sport line'},function (){}];
+
+var arrayArgs = [1,'Marcelo',true, [1,3,5], { descricao : 'carro' , cor : 'vermelha' }];
+
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-getArray(myArray) //(5) [10, "Marcelo", Array(4), {…}, ƒ]
+
+getArray(arrayArgs) // (5) [1, "Marcelo", true, Array(3), {…}]
+
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
@@ -48,13 +59,14 @@ propriedades:
 os livros.
 */
 function book(nomeLivro){
+
     var objLivro = {
                     'Java efetivo': { quantidadePaginas : 50 , autor : 'Marcelo', editora : 'Mundo java'},
                     'Code clean'  : { quantidadePaginas : 150 , autor : 'Mario bob', editora : 'Java student'},
                     'Java 12'     : { quantidadePaginas : 500 , autor : 'Chaves', editora : 'Abril'}        
                    };
 
-   return !nomeLivro ? objLivro : objLivro[nomeLivro];
+      return !nomeLivro ? objLivro : objLivro[nomeLivro];
    }
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.

@@ -7,27 +7,31 @@ Crie um array e mostre no console a representação em String desse array,
 usando o método visto na aula 13.
 */
 console.log( 'O array em formato de string é:' );
-// ?
+var myArray = [1,2,3,4,5,6];
+console.log(myArray.toString());
 
 /*
 Crie 2 arrays `sul` e `sudeste`, que serão as regiões do Brasil.
 Cada array deve conter os estados dessa região.
 */
-// ?
+var sul = ['Paraná','Santa Catarina','Rio Grande do Sul'];
+var sudoeste = [ 'Rio de Janeiro','São Paulo', 'Minas Gerais' ,'Espírito Santo'];
+
 
 /*
 Crie uma variável chamada `brasil`, que irá receber as duas regiões
 concatenadas. Mostre o `brasil` no console.
 */
 console.log( '\nAlguns Estados do Brasil:' );
-// ?
+var brasil =  sul.concat(sudoeste);
+console.log(brasil);
 
 /*
 Adicione 3 novos estados da região Norte no início do array e mostre no console.
 */
 console.log( '\nMais estados adicionados:' );
-// ?
-
+brasil.unshift( 'Acre', 'Amapá', 'Amazonas', 'Pará', 'Rondônia', 'Roraima','Tocantins');
+console.log(brasil);
 /*
 Remova o primeiro estado do array `brasil` e mostre-o no console.
 */

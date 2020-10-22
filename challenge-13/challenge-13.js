@@ -158,7 +158,7 @@ var map = newBrasil.map(function(dados){
         
 
 });
-
+ 
 
 /*
 Mostre no console o array criado acima:

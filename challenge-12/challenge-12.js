@@ -42,48 +42,57 @@ books.push( {name : 'Biblia sagrada' , pagges : '500'});
 books.push( {name : 'Java efetivo', pages : '300'});
 
 
-console.log( '\nLista de livros:' );
-
 /*
 Mostre no console todos os livros.
 */
 // ?
+console.log( '\nLista de livros:' );
+console.log(books);
 
-console.log( '\nLivro que está sendo removido:' );
 /*
 Remova o último livro, e mostre-o no console.
 */
 // ?
-
-console.log( '\nAgora sobraram somente os livros:' );
+console.log( '\nLivro que está sendo removido:' );
+var lastBook  =  books.pop();
+console.log(lastBook);
 /*
 Mostre no console os livros restantes.
 */
 // ?
+console.log( '\nAgora sobraram somente os livros:' );
+console.log(books);
 
 /*
 Converta os objetos que ficaram em `books` para strings.
 */
 // ?
 console.log( '\nLivros em formato string:' );
+books = JSON.stringify(books);
+
+
 
 /*
 Mostre os livros nesse formato no console:
 */
-// ?
+console.log(books),
 
 /*
 Converta os livros novamente para objeto.
 */
-// ?
+books = JSON.parse(books);
 console.log( '\nAgora os livros são objetos novamente:' );
+console.log(books);
 
 /*
 Mostre no console todas as propriedades e valores de todos os livros,
 no formato abaixo:
     "[PROPRIEDADE]: [VALOR]"
 */
-// ?
+
+for(var i = 0; i < books.length; i ++){
+    console.log(Object.values(books[i]));
+}
 
 /*
 Crie um array chamado `myName`. Cada item desse array deve ser uma letra do

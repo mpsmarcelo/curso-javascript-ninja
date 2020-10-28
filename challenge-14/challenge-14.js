@@ -75,20 +75,27 @@ infantil, onde você coloca a letra "P" antes de cada sílaba de uma palavra
 falada, como se você estivesse falando em código xD
 */
 console.log( '\nSeu nome na língua do "P":' );
-// ?
+name = ['MAR','CE','LO'];
+name.reduce(function(acumulador, item){
+     return acumulador + ' P ' +  item;
+},''); 
 
 /*
 Crie uma variável chamada `inversedName`, que reduzirá o array em uma string
 e atribuirá o seu nome invertido (usando o array criado acima).
 */
 console.log( '\nInversed Name:' );
-// ?
+var inverseName  = name.reduceRight(function(acumulador, item){
+     return acumulador  +  item;
+},''); 
+
+console.log(inverseName)
 
 /*
 Mostre no console o array `numberObjects`.
 */
 console.log( '\nNumber objects' );
-// ?
+console.log(numberObjects);
 
 /*
 Verifique se existem em algum índice de numberObjects um objeto ìgual a

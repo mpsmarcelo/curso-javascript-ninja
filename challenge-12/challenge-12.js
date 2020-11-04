@@ -33,24 +33,29 @@ seguintes propriedades:
 `name`: String
 `pages`: Number
 */
- 
+<<<<<<< HEAD
+var books= [];
+
 console.log( '\nLista de livros:' );
 books.push( {name : 'Lirvo de eli', pages : 200});
 books.push( {name : 'Biblia sagrada' , pagges : 500});
 books.push( {name : 'Java efetivo', pages : 300});
 
 
+
 /*
 Mostre no console todos os livros.
 */
+// ?
+console.log( '\nLista de livros:' );
 console.log(books);
-
 
 /*
 Remova o último livro, e mostre-o no console.
 */
 // ?
 console.log( '\nLivro que está sendo removido:' );
+
 
 var lastBook  = books.pop();
 undefined
@@ -68,19 +73,19 @@ Converta os objetos que ficaram em `books` para strings.
 */
 // ?
 console.log( '\nLivros em formato string:' );
- books  = JSON.stringify(books);
+books  = JSON.stringify(books);
+
 
 /*
 Mostre os livros nesse formato no console:
 */
-console.log(books);
+console.log(books),
 
 /*
 Converta os livros novamente para objeto.
 */
-// ?
+books = JSON.parse(books);
 console.log( '\nAgora os livros são objetos novamente:' );
-books  = JSON.parse(books);
 console.log(books);
 
 /*
@@ -88,6 +93,7 @@ Mostre no console todas as propriedades e valores de todos os livros,
 no formato abaixo:
     "[PROPRIEDADE]: [VALOR]"
 */
+
 for(var i = 0 ;  i < books.length; i ++){
 
 	for(var prop in books[i]){
